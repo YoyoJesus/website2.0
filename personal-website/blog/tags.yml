@@ -1,0 +1,19 @@
+combat-robotics:
+  label: Combat Robotics
+  permalink: /combat-robotics
+  description: Combat Robotics tag description
+
+software:
+  label: Software Projects
+  permalink: /software-projects
+  description: Software Projects tag description
+
+3d-printing:
+  label: 3D Printing
+  permalink: /3d-printing
+  description: 3D Printing tag description
+
+magic:
+  label: Magic: The Gathering
+  permalink: /magic-the-gathering
+  description: Magic: The Gathering tag description
