@@ -54,10 +54,10 @@ const config: Config = {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
     navbar: {
-      title: 'Austin Sternberg',
+      title: '',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/avatar.png',
       },
       items: [
         {to: '/blog', label: 'Blog', position: 'left'},
