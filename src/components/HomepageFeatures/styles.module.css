@@ -9,3 +9,26 @@
   height: 200px;
   width: 200px;
 }
+
+.iframe-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.content {
+  padding: 20px;
+}
+
+h1 {
+  color: #333;
+}
+
+h2, h3 {
+  color: #666;
+}
+
+.centered {
+  text-align: center;
+  font-style: italic;
+}
