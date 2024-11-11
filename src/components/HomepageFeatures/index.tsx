@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import "7.css/dist/7.scoped.css"
 
 type FeatureItem = {
   title: string;
