@@ -1,11 +1,26 @@
 import React from 'react';
-import Layout from '@theme/Layout'; // This imports the default Docusaurus layout component
+import clsx from 'clsx';
+import Layout from '@theme/Layout';
+import Heading from '@theme/Heading';
+import Link from '@docusaurus/Link';
+import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+
+import styles from './index.module.css'; // Custom styles for this page
 
 const Projects = () => {
+  const { siteConfig } = useDocusaurusContext();
+
   return (
-    <Layout title="My Projects" description="Showcasing some of my work with 3D printing, programming, and robotics.">
-      <div className="container">
-        <div className="content">
+    <Layout title="My Projects" description="A showcase of my work with 3D printing, programming, and robotics.">
+      <header className={clsx('hero hero--primary', styles.heroBanner)}>
+        <div className="container">
+          <Heading as="h1" className="hero__title">Projects</Heading>
+          <p className="hero__subtitle">A collection of my past and current projects.</p>
+        </div>
+      </header>
+      
+      <main>
+        <div className="container">
           <h1>3D Printing Projects</h1>
           <p>Quick Example of some items I printed. Yes, Octoprint/Cam is better. This is from years ago.</p>
           <div className="iframe-container">
@@ -65,8 +80,16 @@ const Projects = () => {
               allowFullScreen
             ></iframe>
           </div>
+
+          <div className={clsx("win7", styles.win7)}>
+            <Link
+              className="button button--secondary button--lg"
+              to="/docs/intro">
+              Learn More About My Projects
+            </Link>
+          </div>
         </div>
-      </div>
+      </main>
     </Layout>
   );
 };
